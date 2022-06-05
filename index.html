@@ -23,76 +23,108 @@
             font-family: 'Gentium Plus', serif;
             text-align:center;
             margin:0 auto;
+            box-sizing: content-box;
             
+        }
+        body{
+            background-color:black;
         }
         .cover{
-            margin-top: 30%;
-            
-            
+            margin-top: 30vh;
+            border: 10px solid black;
+            display:inline-block;
+            background-image: radial-gradient(circle, #48dcad, #00d7ea, #00c8ff, #79abff, #ed7df2);
+            border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E") 1;
+        } 
+        th{
+            animation: rotate 1.5s linear infinite;
         }
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
         table tr th {
             color:rgb(251, 0, 0);
             background-color: rgba(5, 229, 229, 0.94);
+            
         }
         table tr td{
-            padding: 10px 10px 5px 15px ;
+            padding: 5px 10px 5px 10px ;
             text-align:center;
+            font-size: 15px;
         }
         table tr:nth-child(even){
-            background-color: rgba(242, 237, 237, 0.81);
-            color:rgb(0, 0, 0);
+            background-image: linear-gradient(to left, #2ff0d0, #7aedad, #aae791, #d1df80, #f2d57d);
+            color:black;
         } 
+        table tr:nth-child(odd){
+            background-image: linear-gradient(to right, #2ff0d0, #7aedad, #aae791, #d1df80, #f2d57d);
+            color:black;
+        }  
         
-       
-        .math{
-            background-color:white;
-        }
-        #Math,#Physics,#English{
+        #Math,#Physics,#English,#Physics2{
             cursor:pointer;
         }
 
         .red{
-            color:red;
+            color:rgb(0, 106, 255);
         }
     </style>
     <body>
       <section class="cover">
           <div class="tittle">
-              <table border="1" cellspacing="0" cellpadding="10">
+              <table border="1" cellspacing="0" cellpadding="10" class="cover2"> 
                   
+            
                     <tr>
                         <th> Môn</th>
                         <th> Lịch Học </th>
                         <th> Thời Gian </th>
                         <th>Tiền Học</th>
                     </tr>
-                  
+                
                        <!-- MATH -->
+            
                     <tr>
-                        <td class="math">Toán <br/> ( Cô Phượng )</td>
+                        <td class="math" style="color:black; font-size:15px; font-weight:bolder; background-image: linear-gradient(to right, #48dcad, #00dbec, #00d1ff, #9dbcff, #f2a2f6);"> Toán <br/> ( Cô Phượng )</td>
                         <td>T2 + T4</td>
-                        <td> 7h30 - 9h </td>
+                        <td> T2: 3h30 - 5h <br/> T4: 7h30 - 9h</td>
                         <td id="Math" onclick="Math()">80K/Buổi</td>
                     </tr>
+                
                     <!-- PHYSICS -->
+                
                     <tr>
-                        <td rowspan="2">Vật Lý</td>
+                        <td rowspan="2"  style="color:black; font-size:15px; font-weight:bolder; background-image: linear-gradient(to right, #48dcad, #00dbec, #00d1ff, #9dbcff, #f2a2f6);">Vật Lý</td>
                         <td>T6 ( Thầy Thắng )</td>
                         <td> 4h30 - 6h </td>
                         <td id="Physics" onclick="Physics()">60K/Buổi</td>
                     </tr>
+                    
+                    <!-- <span> -->
                     <tr>
-                        <td>Cô Nụ</td>
-                        <td>Chưa học</td>
-                        <td>chưa học</td>
+                        <td>T6 (Cô Nụ)</td>
+                        <td>9h - 10h30 <br/> < chưa học > </td>
+                        <td id="Physics2" onclick="Physics2()">70K/Buổi</td>
                     </tr>
+                    <!-- </span> -->
                     <!-- ENGLISH --> 
+                
                     <tr>
-                        <td> Tiếng Anh <br/> ( Thầy Hưng )</td>
+                        <td style="color:black; font-size:15px; font-weight:bolder; background-image: linear-gradient(to right, #48dcad, #00dbec, #00d1ff, #9dbcff, #f2a2f6);"> Tiếng Anh <br/> ( Thầy Hưng )</td>
                         <td>T3 + T7</td>
                         <td>5h30 - 7h30</td>
-                        <td id="English" onclick="English()">60k/Buổi</td>
+                        <td id="English" onclick="English()">60K/Buổi</td> 
                     </tr>
+                    
                 
                 </table>
           </div>
