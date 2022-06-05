@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lịch Học Thêm</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border: border-box;
+            font-family: 'Gentium Plus', serif;
+            text-align:center;
+            margin:0 auto;
+            
+        }
+        .cover{
+            margin-top: 30%;
+            
+            
+        }
+        table tr th {
+            color:rgb(251, 0, 0);
+            background-color: rgba(5, 229, 229, 0.94);
+        }
+        table tr td{
+            padding: 10px 10px 5px 15px ;
+            text-align:center;
+        }
+        table tr:nth-child(even){
+            background-color: rgba(242, 237, 237, 0.81);
+            color:rgb(0, 0, 0);
+        } 
+        
+       
+        .math{
+            background-color:white;
+        }
+        #Math,#Physics,#English{
+            cursor:pointer;
+        }
+
+        .red{
+            color:red;
+        }
+    </style>
+    <body>
+      <section class="cover">
+          <div class="tittle">
+              <table border="1" cellspacing="0" cellpadding="10">
+                  
+                    <tr>
+                        <th> Môn</th>
+                        <th> Lịch Học </th>
+                        <th> Thời Gian </th>
+                        <th>Tiền Học</th>
+                    </tr>
+                  
+                       <!-- MATH -->
+                    <tr>
+                        <td class="math">Toán <br/> ( Cô Phượng )</td>
+                        <td>T2 + T4</td>
+                        <td> 7h30 - 9h </td>
+                        <td id="Math" onclick="Math()">80K/Buổi</td>
+                    </tr>
+                    <!-- PHYSICS -->
+                    <tr>
+                        <td rowspan="2">Vật Lý</td>
+                        <td>T6 ( Thầy Thắng )</td>
+                        <td> 4h30 - 6h </td>
+                        <td id="Physics" onclick="Physics()">60K/Buổi</td>
+                    </tr>
+                    <tr>
+                        <td>Cô Nụ</td>
+                        <td>Chưa học</td>
+                        <td>chưa học</td>
+                    </tr>
+                    <!-- ENGLISH --> 
+                    <tr>
+                        <td> Tiếng Anh <br/> ( Thầy Hưng )</td>
+                        <td>T3 + T7</td>
+                        <td>5h30 - 7h30</td>
+                        <td id="English" onclick="English()">60k/Buổi</td>
+                    </tr>
+                
+                </table>
+          </div>
+      </section>
+    </body>
+    <script>
+        function Math(){
+            document.getElementById("Math").innerHTML ="<b>VIETCOMBANK</b> <span class='red'> <br/> <u>05410002920059 </u></span> <br/> <b>LE THI PHUONG</b>";
+    }
+    function Physics(){
+            document.getElementById("Physics").innerHTML ="Không Biết";
+    }
+    function English(){
+            document.getElementById("English").innerHTML ="<b>BIDV</b> <span class='red'> <br/> <u> 21410003037421 </u></span> <br/> <b>TA THANH HUNG</b>";
+    }
+    </script>
+</html>
