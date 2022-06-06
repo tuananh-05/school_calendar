@@ -39,6 +39,9 @@
         th{
             animation: rotate 1.5s linear infinite;
         }
+        td{
+            animation: rotate 1s cubic-bezier(0.49, 0.5, 0.52, 0.48) infinite;
+        }
 @keyframes rotate {
   0% {
     filter: hue-rotate(0deg);
@@ -56,10 +59,10 @@
             background-color: rgba(5, 229, 229, 0.94);
             
         }
-        table tr td{
-            padding: 5px 10px 5px 10px ;
+         table tr td{
+            padding: 6px 3px 6px 3px ;  
             text-align:center;
-            font-size: 15px;
+            font-size: 14px;
         }
         table tr:nth-child(even){
             background-image: linear-gradient(to left, #2ff0d0, #7aedad, #aae791, #d1df80, #f2d57d);
@@ -139,6 +142,9 @@
     }
     function English(){
             document.getElementById("English").innerHTML ="<b>BIDV</b> <span class='red'> <br/> <u> 21410003037421 </u></span> <br/> <b>TA THANH HUNG</b>";
+    }
+        function Physics2(){
+            document.getElementById("Physics2").innerHTML ="<b>TECHCOMBANK</b> <span class='red'> <br/> <u> 19027776231017 </u></span> <br/> <b>PHAM THI NU</b>";
     }
     </script>
 </html>
